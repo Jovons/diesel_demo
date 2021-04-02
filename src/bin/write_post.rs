@@ -1,7 +1,4 @@
-extern crate diesel;
-extern crate diesel_demo_step_2_pg;
-
-use diesel_demo_step_2_mysql::*;
+use diesel_demo::*;
 use std::io::{stdin, Read};
 
 fn main() {
