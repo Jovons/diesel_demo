@@ -1,4 +1,6 @@
-use schema::posts;
+use diesel::{Queryable,Insertable};
+// use super::schema::posts; // 方法1，相对路径
+use crate::schema::posts; // 方法2， 绝对路径
 
 #[derive(Queryable)]
 pub struct Post {

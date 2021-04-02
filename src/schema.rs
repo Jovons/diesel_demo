@@ -1,3 +1,5 @@
+use diesel::table;
+
 table! {
     posts (id) {
         id -> Integer,

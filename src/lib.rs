@@ -5,7 +5,12 @@ use diesel::prelude::*;
 use dotenv::dotenv;
 use std::env;
 
-use self::models::{NewPost, Post};
+#[macro_use]
+extern crate diesel;
+
+// use models::{NewPost, Post} // 方法1. 相对路径省略self
+// use self::models::{NewPost, Post}; // 方法2， 相对路径
+use crate::models::{NewPost, Post}; // 方法3， 绝对路径
 
 pub fn establish_connection() -> MysqlConnection {
     dotenv().ok();
