@@ -21,7 +21,7 @@ table! {
 }
 
 #[derive(Debug, PartialEq, FromSqlRow, AsExpression)]
-#[sql_type  = "String"]
+#[sql_type  = "Varchar"]
 pub enum MyEnum {
     Foo,
     Bar,
