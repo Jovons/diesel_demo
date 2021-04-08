@@ -80,7 +80,7 @@ fn custom_types_round_trip() {
 
     let inserted = insert_into(custom_types::table)
         .values(&data)
-        .get_results(&connection)
+        .execute(&connection)
         .unwrap();
     assert_eq!(data, inserted);
 }
