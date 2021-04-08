@@ -20,7 +20,8 @@ table! {
     }
 }
 
-#[derive(Debug, PartialEq, FromSqlRow, AsExpression)]
+#[derive(Debug, PartialEq, FromSqlRow, AsExpression, SqlType)]
+#[mysql_type = "String"]
 pub enum MyEnum {
     Foo,
     Bar,

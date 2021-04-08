@@ -1,8 +1,7 @@
 use diesel::{Queryable,Insertable};
 use chrono;
 use bigdecimal;
-// use super::schema::posts; // 方法1，相对路径
-use crate::schema::posts; // 方法2， 绝对路径
+use crate::schema::posts;
 
 #[derive(Queryable)]
 pub struct Post {
